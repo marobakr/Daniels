@@ -273,8 +273,18 @@ header h1 span {
   font-weight: 100;
   font-size: 40px;
 }
-header .sochial i {
-  background-color: #1a282bad;
+
+header .sochial span {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+header .sochial span:hover {
+  background-color: white;
+  color: #000;
 }
 /* End header */
 
@@ -310,6 +320,12 @@ header .sochial i {
 #about .progresspars .progress {
   height: 28px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#about .progresspars .progress-bar:nth-child(1) {
+  width: 95%;
+}
+#about .progresspars .progress-bar:nth-child(2) {
+  width: 5%;
 }
 #about .progresspars .progress h6 {
   font-weight: 400;
@@ -485,15 +501,15 @@ header .sochial i {
   border: 1px solid #000;
   transition: var(--main-transition);
 }
+.team .row figure .overlay span:hover {
+  background-color: white;
+  color: #000;
+}
 .team .row figure img {
   transition: all 0.7s;
 }
 .team .row figure:hover img {
   transform: scale(1.5);
-}
-.team .row figure .overlay span:hover {
-  background-color: white;
-  color: #000;
 }
 .team .row .card-text h5 {
   font-weight: 700;
@@ -572,7 +588,7 @@ button.scrollToTopBtn {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: #000;
   color: white;
   border: none;
 }
