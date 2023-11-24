@@ -2889,14 +2889,71 @@
           <div
             id="carouselExampleIndicators-Testmonials"
             class="carousel slide"
+            data-bs-ride="carousel"
           >
-            <div class="carousel-inner d-flex justify-content-center">
-              <div class="carousel-item active testimonials-user">
-                <img
-                  src="./imgs/1_New1.jpg"
-                  class="d-block w-100 img-thumbnail rounded-circle"
-                  alt="..."
-                />
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active testimonials-user"
+                data-bs-interval="2000"
+              >
+                <figure class="images mb-4">
+                  <img
+                    src="./imgs/testi-1.jpg"
+                    class="d-block w-100 rounded-circle"
+                    alt="alex smith"
+                  />
+                </figure>
+                <div class="info-user mb-4 text-center w-75 m-auto">
+                  <p class="mb-4">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                  <h6>alex smith</h6>
+                  <span class="mb-4">envato customer</span>
+                </div>
+              </div>
+              <div
+                class="carousel-item testimonials-user"
+                data-bs-interval="2000"
+              >
+                <figure class="images mb-4">
+                  <img
+                    src="./imgs/1_New1.jpg"
+                    class="d-block w-100 rounded-circle"
+                    alt="alex smith"
+                  />
+                </figure>
+                <div class="info-user mb-4 text-center w-75 m-auto">
+                  <p class="mb-4">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                  <h6>alex smith</h6>
+                  <span class="mb-4">envato customer</span>
+                </div>
+              </div>
+              <div
+                class="carousel-item testimonials-user"
+                data-bs-interval="2000"
+              >
+                <figure class="images mb-4">
+                  <img
+                    src="./imgs/testi-2.jpg"
+                    class="d-block w-100 rounded-circle"
+                    alt="alex smith"
+                  />
+                </figure>
+                <div class="info-user mb-4 text-center w-75 m-auto">
+                  <p class="mb-4">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                  <h6>alex smith</h6>
+                  <span class="mb-4">envato customer</span>
+                </div>
               </div>
             </div>
             <button
@@ -2923,12 +2980,8 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
-
-            <div class="info-user">
-              <p></p>
-            </div>
             <!-- Indicators -->
-            <div class="carousel-indicators position-relative bg-black mt-5">
+            <div class="carousel-indicators position-relative mt-5">
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators-Testmonials"
@@ -2955,63 +3008,73 @@
       </section>
       <!-- End Testimonials -->
       <!-- Start Counter -->
-      <!-- <section
+      <section
         id="counter"
-        class="counter bg-light py-5 text-center position-relative z-1 d-flex align-items-center"
+        class="counter main-padding-section text-center d-flex align-items-center bg-white"
       >
-        <div
-          class="overlay position-absolute start-0 end-0 top-0 bottom-0"
-        ></div>
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-3 py-3 text-white">
+            <div class="col-md-6 col-lg-3 py-3 item">
               <div
                 class="icons-counter m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle fs-1"
               >
-                <i class="fa-solid fa-check"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
               </div>
-              <p class="text-white fs-1 mb-3 counterTimer" data-count="450">
-                450
-              </p>
-              <p class="text-white text-uppercase mb-3 fs-5">WORKS COMPLETED</p>
+              <p class="fs-1 mb-3 counterTimer" data-count="850">850</p>
+              <p class="text-capitalize mb-3 title">Happy Customers</p>
             </div>
-            <div class="col-md-6 py-3 col-lg-3 text-white">
+            <div class="col-md-6 py-3 col-lg-3 item">
               <div
                 class="icons-counter m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle fs-1"
               >
-                <i class="fa-solid fa-calendar-days"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
               </div>
-              <p class="text-white fs-1 mb-3 counterTimer" data-count="250">
-                250
-              </p>
-              <p class="text-white mb-3 fs-5">YEARS OF EXPERIENCE</p>
+              <p class="fs-1 mb-3 counterTimer" data-count="230">230</p>
+              <p class="mb-3 title">Complete Projects</p>
             </div>
-            <div class="col-md-6 py-3 col-lg-3 text-white">
+            <div class="col-md-6 py-3 col-lg-3 item">
               <div
                 class="icons-counter m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle fs-1"
               >
-                <i class="fa-solid fa-user-group"></i>
+                <i class="fa fa-bullhorn" aria-hidden="true"></i>
               </div>
-              <p class="text-white fs-1 mb-3 counterTimer" data-count="550">
-                550
-              </p>
-              <p class="text-white mb-3 fs-5">TOTAL CLIENTS</p>
+              <p class="fs-1 mb-3 counterTimer" data-count="9450">9450</p>
+              <p class="mb-3 title">Lines Of Code</p>
             </div>
-            <div class="col-md-6 py-3 col-lg-3 text-white">
+            <div class="col-md-6 py-3 col-lg-3 item">
               <div
                 class="icons-counter m-auto mb-3 d-flex justify-content-center align-items-center rounded-circle fs-1"
               >
-                <i class="fa-solid fa-medal"></i>
+                <i class="fa fa-cloud-download" aria-hidden="true"></i>
               </div>
-              <p class="text-white fs-1 mb-3 counterTimer" data-count="480">
-                480
-              </p>
-              <p class="text-white mb-3 fs-5">award won</p>
+              <p class="fs-1 mb-3 counterTimer" data-count="480">780</p>
+              <p class="mb-3 title">Files Downloaded</p>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- End Counter -->
+
+      <!-- Start Team -->
+      <section id="team" class="team">
+        <div class="container">
+          <h3 class="main-title-section m-auto mb-5">our team.</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card w-100" >
+              <img class="card-img-top w-100" src="./imgs/1.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <p class="card-text">
+                   <h4>John Doe</h4>
+                <h5 class="text-uppercase">FRONT-END DEVELOPER</h5>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Start Team -->
     </main>
     <footer></footer>
     <!-- Javascript Bootstrap -->

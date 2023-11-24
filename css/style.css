@@ -370,12 +370,52 @@ header .sochial i {
 }
 /* End FortFolio */
 /* Start Testimonials */
-#testimonials {
+.testimonials {
   background-color: var(--main-bg-color);
   min-height: 70vh;
 }
-.testimonials-user {
+.testimonials-user .images {
   width: 10%;
   margin: auto;
 }
+.testimonials .info-user p {
+  color: var(--alt-color);
+  word-spacing: 3px;
+}
+.testimonials .info-user h6 {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.testimonials .info-user span {
+  color: var(--alt-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+.testimonials .carousel-indicators [data-bs-target] {
+  height: 15px;
+  width: 15px;
+  padding: 0px;
+  border-radius: 50%;
+   background-color: #d6d6d6;
+  transition: var(--main-transition);
+}
+.carousel-indicators .active {
+  background-color: #869791 !important;
+}
 /* End Testimonials */
+/* Start Counter */
+.counter .item :not(:last-child) {
+  color: var(--main-color);
+  font-weight: 700;
+}
+.counter .item .title {
+  color: var(--alt-color);
+  font-weight: 600;
+}
+/* End Counter */
+/* Start Team */
+.team {
+  background-color: var(--main-bg-color);
+}
+
+/* End Team */
