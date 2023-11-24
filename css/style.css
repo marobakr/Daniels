@@ -1,0 +1,381 @@
+/* Start Global Style */
+:root {
+  --main-padding: 100px;
+  --main-color: #434343;
+  --main-bg-color: #f7f7f7;
+  --alt-color: #748182;
+  --main-transition: all 0.5s ease;
+  --main-border: '';
+  --main-fonts: 'Poppins', sans-serif;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 1000vh;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+.main-title-section {
+  color: var(--main-color);
+  font-size: 40px;
+  position: relative;
+  font-weight: 900;
+  width: fit-content;
+  z-index: 1;
+}
+.main-title-section::before {
+  content: '';
+  background-image: url(../imgs/dots.png);
+  background-position: center;
+  background-repeat: repeat;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0px;
+  top: 60%;
+  z-index: -1;
+}
+.main-padding-section {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.main-overlay {
+  opacity: 0.65;
+}
+
+/* End Global Style */
+
+/* Start NavBar */
+#navbar-scroll ul li a {
+  font-weight: 400;
+}
+/* End NavBar */
+/* Start header */
+header {
+  height: 100vh;
+  background: url('../imgs/bg.jpg') left no-repeat;
+  background-size: cover;
+}
+header h5 {
+  font-size: 3.125rem;
+}
+header h1 {
+  font-weight: 400;
+  font-size: 45px;
+}
+header h1:after {
+  content: '|';
+  animation: typing 4s infinite;
+}
+/* Larry Daniels Developer Designer */
+@keyframes typing {
+  0% {
+    content: 'L |';
+  }
+  2% {
+    content: 'La |';
+  }
+  4% {
+    content: 'Lar |';
+  }
+  6% {
+    content: 'Larr |';
+  }
+  8% {
+    content: 'Larry |';
+  }
+  10% {
+    content: 'Larry |';
+  }
+  12% {
+    content: 'Larr |';
+  }
+  14% {
+    content: 'Lar |';
+  }
+  16% {
+    content: 'La |';
+  }
+  18% {
+    content: 'L |';
+  }
+  20% {
+    content: 'Da |';
+  }
+  24% {
+    content: 'Dan |';
+  }
+  26% {
+    content: 'Dani |';
+  }
+  28% {
+    content: 'Danie |';
+  }
+  30% {
+    content: 'Daniel';
+  }
+  32% {
+    content: 'Daniels|';
+  }
+  34% {
+    content: 'Daniels|';
+  }
+  36% {
+    content: 'Daniel |';
+  }
+  38% {
+    content: 'Danie |';
+  }
+  40% {
+    content: 'Dani |';
+  }
+  42% {
+    content: 'Dan |';
+  }
+  44% {
+    content: 'Da |';
+  }
+  46% {
+    content: 'D |';
+  }
+  46% {
+    content: 'D';
+  }
+  48% {
+    content: 'De |';
+  }
+  50% {
+    content: 'Dev |';
+  }
+  55% {
+    content: 'Deve |';
+  }
+  57% {
+    content: 'Devel |';
+  }
+  58% {
+    content: 'Develo |';
+  }
+  60% {
+    content: 'Develop |';
+  }
+  62% {
+    content: 'Develope |';
+  }
+  64% {
+    content: 'Developer |';
+  }
+  68% {
+    content: 'Developer |';
+  }
+  70% {
+    content: 'Develope |';
+  }
+  72% {
+    content: 'Develop |';
+  }
+  74% {
+    content: 'Develo |';
+  }
+  76% {
+    content: 'Devel |';
+  }
+  78% {
+    content: 'Deve |';
+  }
+  80% {
+    content: 'Dev |';
+  }
+  82% {
+    content: 'De |';
+  }
+  84% {
+    content: 'D |';
+  }
+  86% {
+    content: 'D |';
+  }
+  88% {
+    content: 'De |';
+  }
+  90% {
+    content: 'Des |';
+  }
+  92% {
+    content: 'Desi |';
+  }
+  94% {
+    content: 'Desig |';
+  }
+  96% {
+    content: 'Design |';
+  }
+  98% {
+    content: 'Designe |';
+  }
+  100% {
+    content: 'Designer |';
+  }
+}
+
+header h1 span {
+  font-weight: 100;
+  font-size: 40px;
+}
+header .sochial i {
+  background-color: #1a282bad;
+}
+/* End header */
+
+/* Start About */
+
+#about .first-col figure::before {
+  content: '';
+  background-image: url(../imgs/dots.png);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-repeat: repeat;
+  z-index: -1;
+}
+/* End About */
+#about .row .lable {
+  color: #999;
+  letter-spacing: 2px;
+}
+#about .row h3 {
+  color: var(--main-color);
+  font-size: 40px;
+}
+#about .row .about-content {
+  color: var(--alt-color);
+}
+#about .row .about-content b {
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
+#about .progresspars .progress {
+  height: 28px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#about .progresspars .progress h6 {
+  font-weight: 400;
+}
+/* Start Services */
+#services {
+  background-color: var(--main-bg-color);
+}
+
+#services .icons {
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-bg-color);
+  transition: var(--main-transition);
+}
+#services p {
+  color: var(--alt-color);
+  word-spacing: 2px;
+}
+#services .item:hover .icons {
+  background-color: #000;
+  color: white;
+}
+/* End Services */
+
+/* Start FortFolio */
+#portfolio .inner-content .row figcaption {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--main-transition);
+
+  transform: scaleY(0);
+}
+#portfolio .row div {
+  transition: var(--main-transition);
+}
+
+#portfolio .inner-content .row figure:hover figcaption {
+  transform: scaleY(1);
+  opacity: 1;
+}
+#portfolio .inner-content .row figcaption .icons span {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: white;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+#portfolio .inner-content .row figcaption h6 {
+  font-size: 15px;
+  font-weight: 700;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+#portfolio .inner-content .row figcaption .icons span:hover {
+  background-color: rgb(21, 3, 3);
+  border: 1px solid #000;
+  color: #000;
+}
+#portfolio .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--main-color);
+  background-color: transparent;
+  transition: var(--main-transition);
+}
+#portfolio .nav-link {
+  position: relative;
+  color: var(--main-color);
+  font-family: 'Montserrat';
+  font-weight: 800;
+  text-transform: capitalize;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#portfolio .nav-pills .nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: var(--main-transition);
+  width: 0%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+#portfolio .nav-pills .nav-link.active::before {
+  width: 100%;
+}
+#portfolio .fade:not(.show) {
+  transform: scale(0.5);
+}
+#portfolio .fade {
+  transition: all 0.3s;
+}
+/* End FortFolio */
+/* Start Testimonials */
+#testimonials {
+  background-color: var(--main-bg-color);
+  min-height: 70vh;
+}
+.testimonials-user {
+  width: 10%;
+  margin: auto;
+}
+/* End Testimonials */
