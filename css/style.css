@@ -97,7 +97,7 @@ nav.not-scrolling {
 nav.scrolling {
   background-color: #000;
 }
-nav.scrolling .navbar-toggler {
+nav .navbar-toggler {
   background-color: white;
 }
 /* End NavBar */
@@ -116,81 +116,81 @@ header h1 {
 }
 header h1:after {
   content: '|';
-  animation: typing 4s infinite;
+  animation: typing 5s infinite;
 }
-/* Larry Daniels Developer Designer */
+/* larry damiels desinger develpor */
 @keyframes typing {
   0% {
-    content: 'L |';
+    content: 'l |';
   }
   2% {
-    content: 'La |';
+    content: 'la |';
   }
   4% {
-    content: 'Lar |';
+    content: 'lar |';
   }
   6% {
-    content: 'Larr |';
+    content: 'lar |';
   }
   8% {
-    content: 'Larry |';
+    content: 'larry |';
   }
   10% {
-    content: 'Larry |';
+    content: 'larry d |';
   }
   12% {
-    content: 'Larr |';
+    content: 'larry da |';
   }
   14% {
-    content: 'Lar |';
+    content: 'larry dam |';
   }
   16% {
-    content: 'La |';
+    content: 'larry dami |';
   }
   18% {
-    content: 'L |';
+    content: 'larry damie |';
   }
   20% {
-    content: 'Da |';
+    content: 'larry damiel |';
+  }
+  22% {
+    content: 'larry damiels |';
   }
   24% {
-    content: 'Dan |';
+    content: 'larry damiel |';
   }
   26% {
-    content: 'Dani |';
+    content: 'larry damie |';
   }
   28% {
-    content: 'Danie |';
+    content: 'larry dami |';
   }
   30% {
-    content: 'Daniel';
+    content: 'larry dam |';
   }
   32% {
-    content: 'Daniels|';
+    content: 'larry da |';
   }
   34% {
-    content: 'Daniels|';
+    content: 'larry d |';
   }
   36% {
-    content: 'Daniel |';
+    content: 'larry |';
   }
   38% {
-    content: 'Danie |';
+    content: 'larr |';
   }
   40% {
-    content: 'Dani |';
+    content: 'lar |';
   }
   42% {
-    content: 'Dan |';
+    content: 'la |';
   }
   44% {
-    content: 'Da |';
+    content: 'l';
   }
   46% {
     content: 'D |';
-  }
-  46% {
-    content: 'D';
   }
   48% {
     content: 'De |';
@@ -198,74 +198,92 @@ header h1:after {
   50% {
     content: 'Dev |';
   }
-  55% {
+  52% {
     content: 'Deve |';
   }
-  57% {
+  54% {
     content: 'Devel |';
+  }
+  56% {
+    content: 'Develo |';
   }
   58% {
-    content: 'Develo |';
+    content: 'Develop |';
   }
   60% {
-    content: 'Develop |';
+    content: 'Develope |';
   }
   62% {
-    content: 'Develope |';
+    content: 'Developer |';
   }
   64% {
-    content: 'Developer |';
-  }
-  68% {
-    content: 'Developer |';
-  }
-  70% {
     content: 'Develope |';
   }
-  72% {
+  68% {
     content: 'Develop |';
   }
-  74% {
+  70% {
     content: 'Develo |';
   }
-  76% {
+  72% {
     content: 'Devel |';
   }
-  78% {
+  74% {
     content: 'Deve |';
   }
-  80% {
+  76% {
     content: 'Dev |';
   }
-  82% {
+  78% {
     content: 'De |';
+  }
+  80% {
+    content: 'D |';
+  }
+  82% {
+    content: 'D |';
   }
   84% {
-    content: 'D |';
-  }
-  86% {
-    content: 'D |';
-  }
-  88% {
     content: 'De |';
   }
-  90% {
+  86% {
     content: 'Des |';
   }
-  92% {
+  88% {
     content: 'Desi |';
   }
-  94% {
+  90% {
     content: 'Desig |';
   }
-  96% {
+  91% {
     content: 'Design |';
   }
-  98% {
+  92% {
     content: 'Designe |';
   }
-  100% {
+  93% {
     content: 'Designer |';
+  }
+  94% {
+    content: 'Designe |';
+  }
+  95% {
+    content: 'Design |';
+  }
+  96% {
+    content: 'Desig |';
+  }
+  97% {
+    content: 'Desi |';
+  }
+  98% {
+    content: 'Des |';
+  }
+  99% {
+    content: 'De |';
+  }
+  100% {
+    content: 'D |';
   }
 }
 
@@ -277,7 +295,7 @@ header h1 span {
 header .sochial span {
   width: 50px;
   height: 50px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   border-radius: 50%;
   transition: var(--main-transition);
@@ -321,14 +339,37 @@ header .sochial span:hover {
   height: 28px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
 }
-#about .progresspars .progress-bar:nth-child(1) {
-  width: 95%;
-}
-#about .progresspars .progress-bar:nth-child(2) {
-  width: 5%;
-}
+
 #about .progresspars .progress h6 {
   font-weight: 400;
+}
+#about .progresspars .prog-1 {
+  width: 90%;
+}
+#about .progresspars .prog-2 {
+  width: 80%;
+}
+#about .progresspars .prog-3 {
+  width: 90%;
+}
+#about .btns .download button {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.2s;
+  padding: 6px 30px;
+}
+
+#about .btns .contact button,
+#about .download button:hover {
+  background-color: #fff;
+  color: #000;
+}
+#about .btns .contact button {
+  padding: 5px 25px;
+}
+#about .btns .contact button:hover {
+  background-color: #000;
+  color: #fff;
 }
 /* Start Services */
 #services {
