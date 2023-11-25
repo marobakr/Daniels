@@ -55,6 +55,13 @@ h6,
 
 /* End Global Style */
 
+/* Start Re Style Of Browser  */
+::selection {
+  color: #fff;
+  background-color: var(--main-color);
+}
+/* End Re Style Of Browser  */
+
 /* Start NavBar */
 nav {
   transition: var(--main-transition);
@@ -121,7 +128,6 @@ header h1 {
 header h1:after {
   content: '|';
   animation: typing 4s infinite ease;
-  /* transition: var(--main-transition); */
 }
 @keyframes typing {
   0% {
@@ -322,7 +328,7 @@ header .sochial span:hover {
 }
 #about .progresspars .progress-bar {
   width: 20%;
-  transition:var(--main-transition)
+  transition: var(--main-transition);
 }
 
 #about .btns .download button {
