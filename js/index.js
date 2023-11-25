@@ -1,56 +1,35 @@
-// change bg and text color for links
-document.addEventListener('DOMContentLoaded', function () {
-  var links = document.querySelectorAll('a')
-  window.addEventListener('scroll', function () {
-    var scrollPosition = window.scrollY
-    var scrollThreshold = 200
-
-    links.forEach(function (link) {
-      if (scrollPosition > scrollThreshold) {
-        link.classList.add('text-black', 'psoudo-black')
-        link.classList.remove('text-white', 'psoudo-white')
-      } else {
-        link.classList.add('text-white', 'psoudo-white')
-        link.classList.remove('text-black', 'psoudo-black')
-      }
-    })
-  })
-})
-// change bg nav scrolling
+// change bg and text color for links when i scrolling
+const nav = document.querySelector('nav')
 window.addEventListener('scroll', () => {
-  const verticalScrollPx = window.scrollY || window.pageYOffset
-  let navBar = document.querySelector('nav')
-  if (verticalScrollPx < 200) {
-    navBar.classList.remove('bg-white', 'shadow',)
-  } else if (verticalScrollPx > 200 && verticalScrollPx < 1000) {
-    navBar.classList.add('bg-white', 'shadow')
+  if (window.scrollY >= 500) {
+    nav.classList.add('navbar-scrolled', 'shadow')
+  } else if (window.scrollY < 500) {
+    nav.classList.remove('navbar-scrolled', 'shadow')
   }
 })
 // Select Skills Selector
 let ourSkills = document.querySelector('.skills')
 
-  window.onscroll = function () {
+window.onscroll = function () {
   //Skills Offset Top
-  let skillsOffsetTop = ourSkills.offsetTop;
+  let skillsOffsetTop = ourSkills.offsetTop
 
   //Skills Outer Height
-  let skillsOuterHeight = ourSkills.offsetHeight;
+  let skillsOuterHeight = ourSkills.offsetHeight
   // Window Height
-  let windowHeight = this.innerHeight;
+  let windowHeight = this.innerHeight
 
   //window ScrollTop
   let windowScrollTop = window.scrollY
 
   if (windowScrollTop > skillsOffsetTop + skillsOuterHeight - windowHeight) {
-
     let allSkills = document.querySelectorAll(
       '.progresspars .progress .progress-bar '
     )
     allSkills.forEach((skill) => {
-      skill.style.width = skill.dataset.progress;
-    });
+      skill.style.width = skill.dataset.progress
+    })
   }
-
 }
 // function Get Year of footer
 const currentDate = new Date().getFullYear()

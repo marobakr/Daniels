@@ -67,7 +67,18 @@ h6,
 
 /* Start NavBar */
 nav {
-  transition: all 0.7s ease-in-out;
+  transition: var(--main-transition);
+  position: absolute !important;
+}
+.navbar-scrolled {
+  background-color: #fff;
+  position: fixed !important;
+  transform: translateY(100px);
+  top: -100px;
+}
+
+.navbar-scrolled a {
+  color: #000 !important;
 }
 nav ul li a::before {
   content: '';
@@ -81,15 +92,13 @@ nav ul li a::before {
   transition: all 0.5s;
   visibility: hidden;
 }
-.psoudo-white:before {
+nav li a:before {
   background-color: #fff;
 }
-.psoudo-black:before {
+.navbar-scrolled a:before {
   background-color: #000;
 }
-#navbar-scroll ul li a {
-  font-weight: 400;
-}
+
 /* To prevent Before At Media Screen */
 @media (min-width: 992px) {
   nav ul a:hover::before {
@@ -111,8 +120,8 @@ nav ul li a::before {
   color: white;
 }
 
-nav .navbar-toggler {
-  background-color: white;
+.navbar-scrolled .navbar-toggler {
+  background-color: #000;
 }
 /* End NavBar */
 /* Start header */
