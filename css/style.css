@@ -1,3 +1,6 @@
+/* KeyFrame File */
+@import url(./keyfram.css);
+
 /* Start Global Style */
 :root {
   --main-padding: 100px;
@@ -127,154 +130,12 @@ header h1 {
 }
 header h1:after {
   content: '|';
-  animation: typing 4s infinite ease;
+  animation: typing 5s infinite ease;
 }
-@keyframes typing {
-  0% {
-    content: 'l |';
-  }
-  2% {
-    content: 'la |';
-  }
-  4% {
-    content: 'lar |';
-  }
-  6% {
-    content: 'larr |';
-  }
-  8% {
-    content: 'larry |';
-  }
-  10% {
-    content: 'larr |';
-  }
-  12% {
-    content: 'lar |';
-  }
-  14% {
-    content: 'la |';
-  }
-  16% {
-    content: 'l |';
-  }
-  18% {
-    content: 'd |';
-  }
-  20% {
-    content: 'da |';
-  }
-  22% {
-    content: 'dan |';
-  }
-  24% {
-    content: 'dani |';
-  }
-  26% {
-    content: 'danie |';
-  }
-  28% {
-    content: 'daniel |';
-  }
-  30% {
-    content: 'daniels |';
-  }
-  32% {
-    content: 'daniel |';
-  }
-  34% {
-    content: 'danie |';
-  }
-  37% {
-    content: 'dani |';
-  }
-  40% {
-    content: 'dan |';
-  }
-  42.5% {
-    content: 'da |';
-  }
-  45% {
-    content: 'd |';
-  }
-  47.5% {
-    content: 'd |';
-  }
-  50% {
-    content: 'de';
-  }
-  52.5% {
-    content: 'dev |';
-  }
-  55% {
-    content: 'deve |';
-  }
-  57.5% {
-    content: 'devel |';
-  }
-  60% {
-    content: 'develo |';
-  }
-  62.5% {
-    content: 'develop |';
-  }
-  65% {
-    content: 'develope |';
-  }
-  67.5% {
-    content: 'developer |';
-  }
-  70% {
-    content: 'develope |';
-  }
-  72.5% {
-    content: 'develop |';
-  }
-  75% {
-    content: 'develo |';
-  }
-  77.5% {
-    content: 'devel |';
-  }
-  80% {
-    content: 'deve |';
-  }
-  82.5% {
-    content: 'dev |';
-  }
-  85% {
-    content: 'de |';
-  }
-  87.5% {
-    content: 'd |';
-  }
-  90% {
-    content: 'de |';
-  }
-  92% {
-    content: 'des |';
-  }
-  94% {
-    content: 'desi |';
-  }
-  96% {
-    content: 'desig |';
-  }
-  98% {
-    content: 'design |';
-  }
-  99% {
-    content: 'designe |';
-  }
-  100% {
-    content: 'designer |';
-  }
-}
-
 header h1 span {
   font-weight: 100;
   font-size: 40px;
 }
-
 header .sochial span {
   width: 50px;
   height: 50px;
