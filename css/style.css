@@ -67,7 +67,7 @@ h6,
 
 /* Start NavBar */
 nav {
-  transition: var(--main-transition);
+  transition: all 0.7s ease-in-out;
 }
 nav ul li a::before {
   content: '';

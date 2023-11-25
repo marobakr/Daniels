@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
   const verticalScrollPx = window.scrollY || window.pageYOffset
   let navBar = document.querySelector('nav')
   if (verticalScrollPx < 200) {
-    navBar.classList.remove('bg-white', 'shadow')
+    navBar.classList.remove('bg-white', 'shadow',)
   } else if (verticalScrollPx > 200 && verticalScrollPx < 1000) {
     navBar.classList.add('bg-white', 'shadow')
   }
