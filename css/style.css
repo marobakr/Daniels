@@ -66,10 +66,16 @@ nav ul li a::before {
   left: 0;
   right: 0;
   height: 2px;
-  bottom: -5px;
-  background-color: white;
+  bottom: -2px;
+  background-color: #fff;
   transition: all 0.5s;
   visibility: hidden;
+}
+.psoudo-white:before {
+  background-color: #fff;
+}
+.psoudo-black:before {
+  background-color: #000;
 }
 #navbar-scroll ul li a {
   font-weight: 400;
@@ -85,18 +91,16 @@ nav ul li a::before {
     width: 100%;
   }
 }
-nav .navbar a:hover,
-.navbar .active,
-.navbar .active:focus {
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover,
+.nav-link,
+.logo {
   color: white;
 }
 
-nav.not-scrolling {
-  background-color: transparent;
-}
-nav.scrolling {
-  background-color: #000;
-}
 nav .navbar-toggler {
   background-color: white;
 }
@@ -116,9 +120,9 @@ header h1 {
 }
 header h1:after {
   content: '|';
-  animation: typing 5s infinite;
+  animation: typing 4s infinite ease;
+  /* transition: var(--main-transition); */
 }
-/* larry damiels desinger develpor */
 @keyframes typing {
   0% {
     content: 'l |';
@@ -130,160 +134,133 @@ header h1:after {
     content: 'lar |';
   }
   6% {
-    content: 'lar |';
+    content: 'larr |';
   }
   8% {
     content: 'larry |';
   }
   10% {
-    content: 'larry d |';
-  }
-  12% {
-    content: 'larry da |';
-  }
-  14% {
-    content: 'larry dam |';
-  }
-  16% {
-    content: 'larry dami |';
-  }
-  18% {
-    content: 'larry damie |';
-  }
-  20% {
-    content: 'larry damiel |';
-  }
-  22% {
-    content: 'larry damiels |';
-  }
-  24% {
-    content: 'larry damiel |';
-  }
-  26% {
-    content: 'larry damie |';
-  }
-  28% {
-    content: 'larry dami |';
-  }
-  30% {
-    content: 'larry dam |';
-  }
-  32% {
-    content: 'larry da |';
-  }
-  34% {
-    content: 'larry d |';
-  }
-  36% {
-    content: 'larry |';
-  }
-  38% {
     content: 'larr |';
   }
-  40% {
+  12% {
     content: 'lar |';
   }
-  42% {
+  14% {
     content: 'la |';
   }
-  44% {
-    content: 'l';
+  16% {
+    content: 'l |';
   }
-  46% {
-    content: 'D |';
+  18% {
+    content: 'd |';
   }
-  48% {
-    content: 'De |';
+  20% {
+    content: 'da |';
+  }
+  22% {
+    content: 'dan |';
+  }
+  24% {
+    content: 'dani |';
+  }
+  26% {
+    content: 'danie |';
+  }
+  28% {
+    content: 'daniel |';
+  }
+  30% {
+    content: 'daniels |';
+  }
+  32% {
+    content: 'daniel |';
+  }
+  34% {
+    content: 'danie |';
+  }
+  37% {
+    content: 'dani |';
+  }
+  40% {
+    content: 'dan |';
+  }
+  42.5% {
+    content: 'da |';
+  }
+  45% {
+    content: 'd |';
+  }
+  47.5% {
+    content: 'd |';
   }
   50% {
-    content: 'Dev |';
+    content: 'de';
   }
-  52% {
-    content: 'Deve |';
+  52.5% {
+    content: 'dev |';
   }
-  54% {
-    content: 'Devel |';
+  55% {
+    content: 'deve |';
   }
-  56% {
-    content: 'Develo |';
-  }
-  58% {
-    content: 'Develop |';
+  57.5% {
+    content: 'devel |';
   }
   60% {
-    content: 'Develope |';
+    content: 'develo |';
   }
-  62% {
-    content: 'Developer |';
+  62.5% {
+    content: 'develop |';
   }
-  64% {
-    content: 'Develope |';
+  65% {
+    content: 'develope |';
   }
-  68% {
-    content: 'Develop |';
+  67.5% {
+    content: 'developer |';
   }
   70% {
-    content: 'Develo |';
+    content: 'develope |';
   }
-  72% {
-    content: 'Devel |';
+  72.5% {
+    content: 'develop |';
   }
-  74% {
-    content: 'Deve |';
+  75% {
+    content: 'develo |';
   }
-  76% {
-    content: 'Dev |';
-  }
-  78% {
-    content: 'De |';
+  77.5% {
+    content: 'devel |';
   }
   80% {
-    content: 'D |';
+    content: 'deve |';
   }
-  82% {
-    content: 'D |';
+  82.5% {
+    content: 'dev |';
   }
-  84% {
-    content: 'De |';
+  85% {
+    content: 'de |';
   }
-  86% {
-    content: 'Des |';
-  }
-  88% {
-    content: 'Desi |';
+  87.5% {
+    content: 'd |';
   }
   90% {
-    content: 'Desig |';
-  }
-  91% {
-    content: 'Design |';
+    content: 'de |';
   }
   92% {
-    content: 'Designe |';
-  }
-  93% {
-    content: 'Designer |';
+    content: 'des |';
   }
   94% {
-    content: 'Designe |';
-  }
-  95% {
-    content: 'Design |';
+    content: 'desi |';
   }
   96% {
-    content: 'Desig |';
-  }
-  97% {
-    content: 'Desi |';
+    content: 'desig |';
   }
   98% {
-    content: 'Des |';
+    content: 'design |';
   }
   99% {
-    content: 'De |';
+    content: 'designe |';
   }
   100% {
-    content: 'D |';
+    content: 'designer |';
   }
 }
 
@@ -343,30 +320,25 @@ header .sochial span:hover {
 #about .progresspars .progress h6 {
   font-weight: 400;
 }
-#about .progresspars .prog-1 {
-  width: 90%;
+#about .progresspars .progress-bar {
+  width: 20%;
+  transition:var(--main-transition)
 }
-#about .progresspars .prog-2 {
-  width: 80%;
-}
-#about .progresspars .prog-3 {
-  width: 90%;
-}
+
 #about .btns .download button {
   background-color: #000;
   color: #fff;
   transition: all 0.2s;
-  padding: 6px 30px;
 }
-
+#about .btns button {
+  width: 170px;
+}
 #about .btns .contact button,
 #about .download button:hover {
   background-color: #fff;
   color: #000;
 }
-#about .btns .contact button {
-  padding: 5px 25px;
-}
+
 #about .btns .contact button:hover {
   background-color: #000;
   color: #fff;
@@ -395,28 +367,17 @@ header .sochial span:hover {
 /* Start FortFolio */
 #portfolio .inner-content .row figcaption {
   background-color: white;
-  width: 100%;
-  height: 100%;
+  inset: 5px;
   opacity: 0;
   transition: var(--main-transition);
-
-  transform: scaleY(0);
+  transform: translate(-1px, 20px);
 }
 #portfolio .row div {
   transition: var(--main-transition);
 }
-
 #portfolio .inner-content .row figure:hover figcaption {
-  transform: scaleY(1);
-  opacity: 1;
-}
-#portfolio .inner-content .row figcaption .icons span {
-  width: 30px;
-  height: 30px;
-  background-color: #000;
-  color: white;
-  transition: var(--main-transition);
-  cursor: pointer;
+  transform: translate(0);
+  opacity: 0.8;
 }
 #portfolio .inner-content .row figcaption h6 {
   font-size: 15px;
@@ -425,8 +386,17 @@ header .sochial span:hover {
   letter-spacing: 2px;
 }
 
+#portfolio .inner-content .row figcaption .icons span {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: white;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
 #portfolio .inner-content .row figcaption .icons span:hover {
-  background-color: rgb(21, 3, 3);
+  background-color: #fff;
   border: 1px solid #000;
   color: #000;
 }
