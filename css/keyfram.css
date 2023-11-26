@@ -1,4 +1,4 @@
-@keyframes typing{
+ @keyframes typing{
     0%{
         content: 'L';
     }
@@ -177,3 +177,4 @@
         content: "D";
     }
 }
+
